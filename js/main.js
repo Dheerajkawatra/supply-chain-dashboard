@@ -11,9 +11,6 @@ var submit = document.getElementById('submit'),
     entryDone = document.getElementById('entry-done');
 
 
-
-
-
 submit.onclick = function () {
     var toAddOrNot = true;
     var fillAll = document.getElementById('fill-all');
