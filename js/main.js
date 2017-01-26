@@ -1,14 +1,14 @@
-var submit = document.getElementById('submit');
-var barcode = document.getElementById('barcode');
-var courier = document.getElementById('courier');
-var qty = document.getElementById('qty');
-var result = document.getElementById('results');
-var toBeRemoved = document.getElementById('toBeRemoved');
-var remove = document.getElementById('remove');
-var dashboard = document.getElementById('dashboard');
-var results = document.getElementById('results-container');
-var inputMode = document.getElementById('input-mode');
-var entryDone = document.getElementById('entry-done');
+var submit = document.getElementById('submit'),
+    barcode = document.getElementById('barcode'),
+    courier = document.getElementById('courier'),
+    qty = document.getElementById('qty'),
+    result = document.getElementById('results'),
+    toBeRemoved = document.getElementById('toBeRemoved'),
+    remove = document.getElementById('remove'),
+    dashboard = document.getElementById('dashboard'),
+    results = document.getElementById('results-container'),
+    inputMode = document.getElementById('input-mode'),
+    entryDone = document.getElementById('entry-done');
 
 
 
@@ -29,7 +29,6 @@ submit.onclick = function () {
             } else {
 
                 var existing = existingValues[i];
-                var b = existing.innerHTML;
                 if (t == existing.innerHTML) {
                     alert('Already Scanned.');
                     toAddOrNot = false;
@@ -85,11 +84,11 @@ remove.onclick = function () {
             scannedValues[i].parentElement.parentElement.removeChild(scannedValues[i].parentElement);
             doesntExist = false;
             removed.className = "";
-            
+
             setTimeout(function () {
-            removed.className = "hide";
-        }, 1000);
-            
+                removed.className = "hide";
+            }, 1000);
+
             toBeRemoved.value = '';
         }
     }
@@ -112,5 +111,5 @@ inputMode.onclick = function () {
 
 window.onbeforeunload = function () {
     return "Data will be lost if you leave the page, are you sure?";
-    
+
 };
