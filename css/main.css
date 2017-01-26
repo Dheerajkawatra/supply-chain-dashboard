@@ -1,0 +1,95 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background: #c00;
+}
+
+h1 {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 small {
+    color: #f6f6f6;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+.entry-container p {
+    color: #fff;
+}
+
+.entry-container {
+    text-align: center;
+    padding: 20vh;
+}
+
+.dispatched-container {
+    text-align: center;
+    background: #fff;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20vh;
+}
+
+.dispatched-container h2 {
+    color: #333;
+}
+
+#dashboard {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+}
+
+div#results-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,1);
+    color: #fff;
+}
+
+#input-mode {
+    color: #000;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    z-index: 9999999999;    
+}
+
+.entry-head {
+    font-weight: bold;
+}
+
+.row.entry {
+    padding: 0em 5em;
+    font-size: 1.2em;
+}
+
+.row.entry .col-md-3 {
+    border: 1px solid;
+}
+
+.human {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+}
